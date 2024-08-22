@@ -13,6 +13,7 @@ public class bullet : MonoBehaviour
     {
         if (JoystickPlayerExample.Targets.Count > 0)
         {
+            Destroy(gameObject, 1.5f);
             target = JoystickPlayerExample.targetToHit;
         }
         else

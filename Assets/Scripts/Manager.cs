@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
@@ -42,10 +43,8 @@ public class Manager : MonoBehaviour
             isBrust = false;
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Reset()
     {
-
+        SceneManager.LoadScene(2);
     }
 }

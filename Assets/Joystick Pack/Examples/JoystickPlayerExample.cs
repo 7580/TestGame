@@ -30,6 +30,7 @@ public class JoystickPlayerExample : MonoBehaviour
     public static List<GameObject> Targets = new List<GameObject>();
     private void Start()
     {
+        Targets.Clear();
         originalGravityScale = rb.gravityScale;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
